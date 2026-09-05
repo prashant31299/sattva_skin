@@ -27,7 +27,7 @@ export function ShopCatalog({ products, concerns, initialCategory = allFilters }
   );
 
   const categories = useMemo(
-    () => Array.from(new Set(products.map((product) => product.productType ?? product.category))).sort(),
+    () => Array.from(new Set(products.flatMap((product) => [product.category, ...(product.productType ? [product.productType] : [])]))).sort(),
     [products],
   );
 
@@ -64,11 +64,11 @@ export function ShopCatalog({ products, concerns, initialCategory = allFilters }
     <section className={styles.catalog} id="catalog" aria-labelledby="catalog-heading">
       <div className={styles.catalogHeading}>
         <div>
-          <p className={styles.eyebrow}>The lip collection</p>
-          <h2 id="catalog-heading">Pick your signature.</h2>
+          <p className={styles.eyebrow}>The Sattva collection</p>
+          <h2 id="catalog-heading">Find your kind of care.</h2>
         </div>
         <p>
-          Three buttery balms. Two sugar scrubs. Find the texture and ingredient story you love.
+          Face, hair and lip care. Explore each product, its featured ingredients and the details that make it yours.
         </p>
       </div>
 
@@ -145,7 +145,7 @@ export function ShopCatalog({ products, concerns, initialCategory = allFilters }
       <ProductGrid
         products={visibleProducts}
         emptyTitle="No products match these filters."
-        emptyMessage="Clear the filters to explore all five lip-care favourites."
+        emptyMessage="Clear the filters to explore the full Sattva Skin collection."
       />
     </section>
   );

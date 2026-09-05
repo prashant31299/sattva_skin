@@ -8,6 +8,8 @@ import styles from "./site-footer.module.css";
 
 const shopLinks = [
   { label: "All products", href: "/shop" },
+  { label: "Face care", href: "/shop?category=face-care" },
+  { label: "Hair care", href: "/shop?category=hair-care" },
   { label: "Lip balms", href: "/shop?category=lip-balm" },
   { label: "Lip scrubs", href: "/shop?category=lip-scrub" },
   { label: "Lip care", href: "/shop?category=lip-care" },
@@ -64,7 +66,7 @@ export function SiteFooter() {
               <small>SKIN</small>
             </Link>
             <p>{siteConfig.description}</p>
-            <span>Lip balms and sugar scrubs for everyday rituals.</span>
+            <span>Face, hair and lip care for everyday rituals.</span>
             {siteConfig.catalogIsPreview ? (
               <strong>Online checkout coming soon</strong>
             ) : null}

@@ -1,0 +1,73 @@
+{
+  "mode": "Built-in image_gen",
+  "assets": [
+    {
+      "slug": "ayurvedic-herbal-hair-mask",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.17 (1).jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Ayurvedic Herbal Hair Mask, 100 g as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one kraft resealable pouch with its yellow-green label, closed, centered, filling 65 percent of image height, with no ingredient props at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-196b6520-86e6-4124-8588-ea108e5a60a6.png",
+      "correction": {
+        "prompt": "Use case: precise-object-edit. Input image 1 is the edit target. Remove only the very small preparation instructions, MRP and manufacturing date from the bottom of the green label; blend those areas into the existing green/forest illustration. Retain the clearly readable Net Weight: 100 g, brand, product title, four botanical names and major original label text. Do not invent dates, prices or preparation instructions. Preserve composition, lighting, scene, props, colours and all unmentioned details. Clean precise legible typography matching the label. No extra elements.",
+        "reference": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-196b6520-86e6-4124-8588-ea108e5a60a6.png",
+        "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-cfbc3b20-ba6c-488d-8e7b-53df4931c46e.png"
+      }
+    },
+    {
+      "slug": "lemon-fruits-extract-brightening-face-wash",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.18.jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Lemon Fruits Extract Brightening Face Wash, 100 ml as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one clear tall bottle, white flip cap, yellow label, closed, centered, filling 65 percent of image height, with one lemon wedge at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-7c73ba16-cb11-439e-845d-3fd8d70c0fbf.png",
+      "correction": {
+        "prompt": "Use case: precise-object-edit. Input image 1 is the edit target. Correct only the small yellow horizontal band above Net Vol. 100ml. Remove its erroneous Lemon+Pineapple text entirely and replace that line with exactly FACIAL CLEANSER. Preserve all remaining logo, title LEMON FRUITS EXTRACT, BRIGHTENING FACE WASH, Net Vol. 100ml, lemon wedge and packaging. Preserve composition, lighting, scene, props, colours and all unmentioned details. Clean precise legible typography matching the label. No extra elements.",
+        "reference": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-7c73ba16-cb11-439e-845d-3fd8d70c0fbf.png",
+        "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-624836ed-c806-430a-8986-09291efa600c.png"
+      }
+    },
+    {
+      "slug": "almond-oil-control-face-wash",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.19 (1).jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Almond Oil Control Face Wash, 100 ml as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one clear tall bottle, white flip cap, brown label, closed, centered, filling 65 percent of image height, with a few almonds at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-79ddd808-76c5-47a4-bf44-04db66c1de83.png"
+    },
+    {
+      "slug": "neem-acne-control-face-wash",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.20.jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Neem Acne Control Face Wash, 100 ml as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one clear tall bottle, white flip cap, green label, closed, centered, filling 65 percent of image height, with one small neem sprig at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-05ab89ed-5393-4cd7-b1ba-20533029f586.png",
+      "correction": {
+        "prompt": "Use case: precise-object-edit. Input image 1 is the edit target. Remove only the invented small words AYURVEDA REDEFINED underneath NEEM. Restore that space to a simple dotted decorative divider with no text. Everything else must remain unchanged. Preserve composition, lighting, scene, props, colours and all unmentioned details. Clean precise legible typography matching the label. No extra elements.",
+        "reference": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-05ab89ed-5393-4cd7-b1ba-20533029f586.png",
+        "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-d5661c08-d8b2-46c8-a5f2-37e68e644d81.png"
+      }
+    },
+    {
+      "slug": "green-tea-toner",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.21 (1).jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Green Tea Toner, 50 ml as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one slim bottle with tall translucent protective cap and green label, closed, centered, filling 65 percent of image height, with a few green tea leaves at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-d0d15ef0-7802-4b41-ac2b-acbf7796b87f.png"
+    },
+    {
+      "slug": "scar-control-serum",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.21.jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Scar Control Serum, 15 ml as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one small clear dropper bottle, golden collar, white rubber bulb, dark green label, closed, centered, filling 65 percent of image height, with no props at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-7ecb4a08-3520-416f-a16e-bf7c68636b6e.png",
+      "correction": {
+        "prompt": "Use case: precise-object-edit. Input image 1 is the edit target. Correct only the bottle label below the main title Scar Control Serum. Replace the erroneous PENTA TECHNOLOGY line with exactly Rosehip Oil. On the dark green label use exactly two lines Helps Fade Scars & Blemishes and Hydrates & Evens Skin Tone, then Net Vol.: 15ml. These are the original packaging claims. No other small text. Preserve logo, main product title, bottle, dropper and scene unchanged. Preserve composition, lighting, scene, props, colours and all unmentioned details. Clean precise legible typography matching the label. No extra elements.",
+        "reference": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-7ecb4a08-3520-416f-a16e-bf7c68636b6e.png",
+        "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-360eaa5c-7303-433d-b3fd-0c77d18c6008.png"
+      }
+    },
+    {
+      "slug": "skin-repair-night-gel",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.24.jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin Skin Repair Night Gel, 50 g as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one closed white jar with vivid green round lid label, closed, centered, filling 65 percent of image height, with small watermelon slice and aloe leaf at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-91b374aa-c8b3-4a7f-8d7d-2048b370df64.png"
+    },
+    {
+      "slug": "french-clay-face-mask",
+      "reference": "/Users/prash/Downloads/WhatsApp Image 2026-09-05 at 17.14.23 (1).jpeg",
+      "prompt": "Use case: product-mockup. Asset: square ecommerce product hero photograph. Input image 1 is the product identity reference. Restyle the photographed Sattva Skin French Clay Face Mask, 50 g as a premium studio product photograph on warm ivory #F7F3EC with softly lit ivory stone surface, subtle natural shadow, generous negative space. Show exactly one closed white round jar with teal lid label, closed, centered, filling 65 percent of image height, with no props at its base. Preserve the real product dimensions, packaging, exact label artwork, spelling, logo and net quantity. Viewpoint must show its main label clearly; for jars tilt toward camera to show lid while preserving physical shape. Remove the domestic wall and table setting. Photorealistic, restrained editorial lighting, quiet botanical brand style. No new marketing text outside packaging, no extra bottles, no certifications, no claims, no invented open contents or texture swatches. Make packaging text as faithful to the reference as possible.",
+      "source": "/Users/prash/.codex/generated_images/01a0716b-df49-7b81-be96-9be77a1310bd/exec-096c2f4f-5c5e-435e-9cff-867cb79feb24.png"
+    }
+  ]
+}

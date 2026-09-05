@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   agentRules: false,
+  outputFileTracingIncludes: {
+    "/products/*/guide.png": ["./public/images/face-care/*-hero.png", "./public/images/hair-care/*-hero.png"],
+  },
   turbopack: {
     root: process.cwd(),
   },

@@ -31,16 +31,26 @@ export default function Home() {
         <span>Shea butter · The buttery base</span><span>Coconut oil · The smooth glide</span><span>Beeswax · The finishing structure</span>
       </div>
 
+      <section className={styles.products} id="botanical-collection" aria-labelledby="botanical-heading">
+        <div className="container">
+          <div className={styles.sectionHead}>
+            <div><p className="eyebrow">Discover face & hair care</p><h2 className="section-title" id="botanical-heading">More ways<br />to make it yours.</h2></div>
+            <div className={styles.productAside}><p>From neem and green tea to a four-botanical hair mask. Meet eight products and explore their ingredient stories.</p><Link href="/shop?category=face-care">Explore face care <ArrowRight aria-hidden="true" size={15} /></Link></div>
+          </div>
+          <ProductGrid products={products.filter((product) => product.category !== "Lip care")} />
+        </div>
+      </section>
+
       <section className={styles.products} id="collection" aria-labelledby="products-heading">
         <div className="container">
           <div className={styles.sectionHead}>
             <div><p className="eyebrow">Meet your favourites</p><h2 className="section-title" id="products-heading">A little care.<br />A lot to love.</h2></div>
             <div className={styles.productAside}>
               <p>Strawberry, butterscotch, chocolate and red wine. Pick your signature, then make it a ritual.</p>
-              <Link href="/shop">Explore all five <ArrowRight aria-hidden="true" size={15} /></Link>
+              <Link href="/shop?category=lip-care">Explore all five <ArrowRight aria-hidden="true" size={15} /></Link>
             </div>
           </div>
-          <ProductGrid products={products} />
+          <ProductGrid products={products.filter((product) => product.category === "Lip care")} />
         </div>
       </section>
 

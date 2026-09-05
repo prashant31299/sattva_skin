@@ -88,7 +88,7 @@ try {
   await until(`document.querySelectorAll('#catalog article').length === 1`);
   assert.match(await evaluate(`document.querySelector('#catalog article h3').textContent`), /Red Wine/);
   await evaluate(`Array.from(document.querySelectorAll('#catalog button')).find(b=>b.textContent.includes('Clear filters')).click()`);
-  await until(`document.querySelectorAll('#catalog article').length === 5`);
+  await until(`document.querySelectorAll('#catalog article').length === 13`);
   console.log('Shop filters: scrub category, signature and reset passed');
   await navigate('/shop?category=lip-balm');
   await until(`document.querySelectorAll('#catalog article').length === 3`);

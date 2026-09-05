@@ -7,7 +7,7 @@ import styles from "./product-gallery.module.css";
 
 export function ProductGallery({ product }: { product: Product }) {
   const [active, setActive] = useState(0);
-  const labels = ["Product & ingredients", "Ingredient story", "Original photograph"];
+  const labels = product.galleryLabels ?? ["Product & ingredients", "Ingredient story", "Original photograph"];
   return (
     <section className={styles.gallery} aria-label={`${product.name} image gallery`}>
       <figure className={styles.figure}>
@@ -19,7 +19,7 @@ export function ProductGallery({ product }: { product: Product }) {
       <div className={styles.thumbnails} aria-label="Choose a product image">
         {product.images.map((src, index) => (
           <button key={src} type="button" onClick={() => setActive(index)} aria-pressed={active === index} aria-label={`Show ${labels[index]?.toLowerCase() ?? `image ${index + 1}`}`}>
-            <span><Image src={src} alt="" fill loading="eager" sizes="(max-width: 799px) 28vw, 16vw" /></span>
+            <span><Image src={src} alt="" fill loading="lazy" sizes="(max-width: 799px) 28vw, 16vw" /></span>
             <small>{labels[index]}</small>
           </button>
         ))}

@@ -9,16 +9,16 @@ import { ShopCatalog } from "./shop-catalog";
 import styles from "./shop.module.css";
 
 export const metadata: Metadata = {
-  title: "Lip balms & lip scrubs",
+  title: "Face, hair & lip care",
   description:
-    "Explore Strawberry, Butterscotch and Chocolate Lip Balms, plus Strawberry and Red Wine Lip Scrubs.",
+    "Explore Sattva Skin face washes, toner, serum, masks, night gel, lip balms and lip scrubs.",
   alternates: { canonical: `${siteConfig.siteUrl}/shop` },
   openGraph: {
-    title: "Lip balms & lip scrubs | Sattva Skin",
+    title: "Face, hair & lip care | Sattva Skin",
     description:
-      "Lip balms and sugar scrubs with shea butter, coconut oil and beeswax.",
+      "Discover the Sattva Skin collection and explore each product’s ingredient story.",
     url: `${siteConfig.siteUrl}/shop`,
-    images: [{ url: "/images/lip-care/lip-care-collection.webp", alt: "Sattva Skin lip-care collection" }],
+    images: [{ url: "/images/face-care/neem-acne-control-face-wash-hero.webp", alt: "Sattva Skin Neem Acne Control Face Wash" }],
   },
 };
 
@@ -29,7 +29,13 @@ type ShopPageProps = {
 const categoryMap: Record<string, string> = {
   "face-care": "Face care",
   "hair-care": "Hair care",
-  "lip-care": "all",
+  "lip-care": "Lip care",
+  "face-wash": "Face Wash",
+  "toner": "Toner",
+  "serum": "Serum",
+  "night-gel": "Night Gel",
+  "face-mask": "Face Mask",
+  "hair-mask": "Hair Mask",
   "lip-balm": "Lip Balm",
   "lip-scrub": "Lip Scrub",
 };
@@ -52,23 +58,23 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
       <section className={styles.hero} aria-labelledby="shop-title">
         <div className={styles.heroCopy}>
           <p className={styles.indexLine}>
-            <span>Collection 01</span>
-            <span>The lip edit</span>
+            <span>The collection</span>
+            <span>Face / Hair / Lips</span>
           </p>
           <h1 id="shop-title">
-            Lip care.
+            Your care.
             <span>Your way.</span>
           </h1>
           <p className={styles.heroIntro}>
-            Smooth balms and sugar scrubs. Familiar ingredients, favourite signatures, and a little everyday comfort.
+            From your cleansing step to your favourite balm. Explore botanical ingredient stories across face, hair and lip care.
           </p>
           <div className={styles.heroActions}>
             <a className={styles.primaryAction} href="#catalog">
               Explore the collection
               <span aria-hidden="true">↓</span>
             </a>
-            <Link className={styles.textAction} href="/pages/dry-lips">
-              Find your lip ritual <span aria-hidden="true">↗</span>
+            <Link className={styles.textAction} href="/shop?category=face-care#catalog">
+              Explore face care <span aria-hidden="true">↗</span>
             </Link>
           </div>
         </div>
@@ -78,17 +84,17 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
             ROUTINE
           </div>
           <Image
-            src="/images/lip-care/lip-care-collection.webp"
-            alt="Sattva Skin lip balm and lip scrub collection with their signature ingredients"
+            src="/images/face-care/neem-acne-control-face-wash-hero.webp"
+            alt="Sattva Skin Neem Acne Control Face Wash styled on ivory stone"
             fill
             loading="eager"
             fetchPriority="high"
             sizes="(max-width: 899px) 100vw, 52vw"
           />
-          <span className={`${styles.floatingLabel} ${styles.labelOne}`}>01 Shea butter</span>
-          <span className={`${styles.floatingLabel} ${styles.labelTwo}`}>02 Coconut oil</span>
-          <span className={`${styles.floatingLabel} ${styles.labelThree}`}>03 Beeswax</span>
-          <span className={styles.visualCaption}>The Sattva lip collection / 2026</span>
+          <span className={`${styles.floatingLabel} ${styles.labelOne}`}>01 Face care</span>
+          <span className={`${styles.floatingLabel} ${styles.labelTwo}`}>02 Hair care</span>
+          <span className={`${styles.floatingLabel} ${styles.labelThree}`}>03 Lip care</span>
+          <span className={styles.visualCaption}>The Sattva collection / 2026</span>
         </div>
       </section>
 

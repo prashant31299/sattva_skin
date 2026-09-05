@@ -20,7 +20,15 @@ export type Product = {
   whoItsFor: string;
   precautions?: string;
   category: ProductCategory;
-  productType?: "Lip Balm" | "Lip Scrub";
+  productType?: "Lip Balm" | "Lip Scrub" | "Face Wash" | "Toner" | "Serum" | "Night Gel" | "Face Mask" | "Hair Mask";
+  storyHeading?: string;
+  galleryLabels?: string[];
+  faqs?: { question: string; answer: string }[];
+  guide?: {
+    packaging: string;
+    heading: string;
+    highlights: { name: string; detail: string }[];
+  };
   variant?: string;
   size?: string;
   accent?: string;

@@ -1,4 +1,5 @@
 import type { Concern, Ingredient, Product } from "./types";
+import { faceHairProducts } from "./face-hair-products";
 
 type LipProduct = {
   variant: string;
@@ -17,7 +18,7 @@ const lipRange: LipProduct[] = [
   { variant: "Red Wine", slug: "red-wine-lip-scrub", type: "Lip Scrub", accent: "#c49aab", note: "A red wine-inspired sugar scrub for your lip-care ritual." },
 ];
 
-export const products: Product[] = lipRange.map((item) => {
+const lipProducts: Product[] = lipRange.map((item) => {
   const isScrub = item.type === "Lip Scrub";
   const base = [...baseIngredients, ...(isScrub ? ["Sugar"] : [])];
   const name = `${item.variant} ${item.type}`;
@@ -62,6 +63,8 @@ export const products: Product[] = lipRange.map((item) => {
     available: false,
   };
 });
+
+export const products: Product[] = [...lipProducts, ...faceHairProducts];
 
 export const concerns: Concern[] = [
   {
@@ -131,7 +134,7 @@ export const concerns: Concern[] = [
     slug: "hair-fall",
     name: "Hair fall",
     title: "A calmer way to think about hair care.",
-    description: "Start with scalp-friendly basics while the final Sattva hair range is prepared.",
+    description: "Explore the context behind a considered hair-care routine.",
     note: "Scalp care",
     accent: "#A8B59B",
     products: [],
@@ -146,7 +149,7 @@ export const concerns: Concern[] = [
     description: "Explore buttery balms and sugar scrubs, made for a simple lip-care ritual.",
     note: "Lip comfort",
     accent: "#E8B7AF",
-    products: products.map((product) => product.slug),
+    products: lipProducts.map((product) => product.slug),
     morning: ["Gentle care", "Protective balm"],
     evening: ["Comforting balm"],
     faqs: [{ question: "How often can I apply balm?", answer: "Apply a small amount as needed, following the directions on your product label." }],

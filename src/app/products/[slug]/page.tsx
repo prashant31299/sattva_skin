@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ProductGallery } from "@/components/product-gallery";
 import { LipFormula } from "@/components/lip-formula";
+import { ProductGuide } from "@/components/product-guide";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -52,6 +53,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   if (!product) {
     notFound();
   }
+  const isLipCare = product.category === "Lip care";
 
   const productConcerns = concerns.filter((concern) =>
     product.concerns.includes(concern.slug),
@@ -134,24 +136,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
 
             <div className={styles.ingredientBlock}>
-              <p>Signature + ingredient base</p>
+              <p>{isLipCare ? "Signature + ingredient base" : product.ingredients.length ? "Featured on the label" : "Product format"}</p>
               <ul>
                 {productIngredients.map(({ name, detail }) => (
                   <li key={name}>
                     {detail ? <Link href={`/ingredients/${detail.slug}`}>{name}</Link> : name}
                   </li>
                 ))}
+                {!productIngredients.length && <li>{product.productType} · {product.size}</li>}
               </ul>
             </div>
 
             <ul className={styles.trustList} aria-label="Shopping commitments">
               <li>
                 <span aria-hidden="true">01</span>
-                Small pots, simple care
+                {isLipCare ? "Small pots, simple care" : "Original packaging, up close"}
               </li>
               <li>
                 <span aria-hidden="true">02</span>
-                Ingredients with a role
+                {isLipCare ? "Ingredients with a role" : "Explore the product details"}
               </li>
               <li>
                 <span aria-hidden="true">03</span>
@@ -165,12 +168,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <section className={styles.editorialIntro} aria-labelledby="product-story-title">
         <p>Formula note / {product.badges?.[0] ?? "Everyday care"}</p>
         <div>
-          <h2 id="product-story-title">{product.productType === "Lip Scrub" ? "A little polish. A lovely ritual." : "Your everyday pocket companion."}</h2>
+          <h2 id="product-story-title">{product.storyHeading ?? (product.productType === "Lip Scrub" ? "A little polish. A lovely ritual." : "Your everyday pocket companion.")}</h2>
           <p>{product.description}</p>
         </div>
       </section>
 
-      <LipFormula product={product} />
+      {isLipCare ? <LipFormula product={product} /> : <ProductGuide product={product} />}
 
       <section className={styles.details} aria-labelledby="product-details-title">
         <div className={styles.detailsHeading}>
@@ -184,11 +187,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className={styles.accordions}>
           <details open>
             <summary>
-              What it does <span aria-hidden="true">+</span>
+              About the product <span aria-hidden="true">+</span>
             </summary>
             <div>{product.description}</div>
           </details>
-          <details>
+          {productIngredients.length > 0 && <details>
             <summary>
               Key ingredients <span aria-hidden="true">+</span>
             </summary>
@@ -196,24 +199,24 @@ export default async function ProductPage({ params }: ProductPageProps) {
               {productIngredients.map(({ name, detail }) => (
                 <p key={name}>
                   <strong>{name}</strong>
-                  {detail ? ` — ${detail.description}` : " — Final ingredient role to be verified."}
+                  {isLipCare && detail ? ` — ${detail.description}` : " — Featured on the product label."}
                 </p>
               ))}
             </div>
-          </details>
+          </details>}
           <details>
             <summary>
-              Ingredient base <span aria-hidden="true">+</span>
+              {isLipCare ? "Ingredient base" : "Ingredient information"} <span aria-hidden="true">+</span>
             </summary>
             <div>{product.fullIngredients}</div>
           </details>
-          <details>
+          {product.howToUse && <details>
             <summary>
               How to use <span aria-hidden="true">+</span>
             </summary>
             <div>{product.howToUse}</div>
-          </details>
-          <details>
+          </details>}
+          {product.whoItsFor && <details>
             <summary>
               Who it is for <span aria-hidden="true">+</span>
             </summary>
@@ -221,13 +224,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <p>{product.whoItsFor}</p>
               
             </div>
-          </details>
-          <details>
+          </details>}
+          {product.precautions && <details>
             <summary>
               Precautions <span aria-hidden="true">+</span>
             </summary>
-            <div>{product.precautions ?? "Final precautions will follow the verified label."}</div>
-          </details>
+            <div>{product.precautions}</div>
+          </details>}
           <details>
             <summary>
               Common questions <span aria-hidden="true">+</span>
@@ -238,11 +241,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <br />
                 Save your favourites to the bag and contact us for current pricing and availability. Online checkout is not open yet.
               </p>
-              <p>
+              {isLipCare && <p>
                 <strong>What is the difference between balm and scrub?</strong>
                 <br />
                 Both use shea butter, coconut oil and beeswax. The scrub also contains sugar for a polishing texture; the balm has a smooth finish.
-              </p>
+              </p>}
+              {product.faqs?.map((faq) => <p key={faq.question}><strong>{faq.question}</strong><br />{faq.answer}</p>)}
             </div>
           </details>
         </div>

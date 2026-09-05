@@ -14,8 +14,9 @@ import styles from "./site-header.module.css";
 
 const primaryNavigation = [
   { label: "Shop", href: "/shop" },
-  { label: "Lip balms", href: "/shop?category=lip-balm" },
-  { label: "Lip scrubs", href: "/shop?category=lip-scrub" },
+  { label: "Face care", href: "/shop?category=face-care" },
+  { label: "Hair care", href: "/shop?category=hair-care" },
+  { label: "Lip care", href: "/shop?category=lip-care" },
   { label: "Ingredients", href: "/ingredients" },
   { label: "Our story", href: "/about" },
 ];
@@ -106,9 +107,9 @@ export function SiteHeader() {
     <>
       <header className={styles.shell}>
         <div className={styles.announcement}>
-          <span>A little everyday lip care</span>
+          <span>A little everyday care</span>
           <span aria-hidden="true">•</span>
-          <span>Buttery balms + sugar scrubs</span>
+          <span>Face · Hair · Lips</span>
           {siteConfig.catalogIsPreview ? (
             <>
               <span aria-hidden="true">•</span>

@@ -4,7 +4,7 @@
 .mainImage { object-fit: contain; }
 .zoom { position: absolute; right: 1rem; bottom: 1rem; padding: .4rem .6rem; border: 1px solid #344b3a25; border-radius: 999px; background: #fffdf9ed; font-size: .6rem; }
 .figure figcaption { display: flex; justify-content: space-between; gap: .5rem; padding: .85rem 1rem; font-size: .6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
-.thumbnails { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; margin-top: .75rem; }
+.thumbnails { display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: .6rem; margin-top: .75rem; }
 .thumbnails button { min-width: 0; padding: .25rem; border: 1px solid var(--color-border); border-radius: .7rem; background: transparent; cursor: pointer; }
 .thumbnails button[aria-pressed="true"] { border-color: var(--color-primary); box-shadow: 0 0 0 1px var(--color-primary); }
 .thumbnails button > span { display: block; position: relative; aspect-ratio: 1.3; overflow: hidden; border-radius: .4rem; background: var(--color-surface); }
