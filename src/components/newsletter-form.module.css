@@ -1,0 +1,53 @@
+.wrap {
+  width: min(100%, 540px);
+}
+
+.form {
+  display: flex;
+  width: min(100%, 540px);
+  border-bottom: 1px solid currentColor;
+}
+
+.form:focus-within {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.form input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.form button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0;
+  background: transparent;
+  padding: 1rem 0 1rem 1rem;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.success {
+  margin: 1.25rem 0 0;
+  font-size: 1rem;
+}
+
+.note {
+  margin: 0.65rem 0 0;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.72rem;
+}

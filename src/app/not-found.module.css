@@ -1,0 +1,10 @@
+.wrap {
+  display: grid;
+  min-height: 65vh;
+  place-content: center;
+  justify-items: start;
+  gap: 1.25rem;
+  padding-block: 6rem;
+}
+
+.wrap p { max-width: 34rem; margin: 0; }

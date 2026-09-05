@@ -1,0 +1,270 @@
+.page {
+  --ink: #173b2c;
+  --paper: #f5f0e6;
+  --line: rgba(23, 59, 44, 0.2);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.hero {
+  min-height: 72vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 0.5fr);
+  gap: clamp(3rem, 8vw, 9rem);
+  align-items: end;
+  padding: clamp(7rem, 13vw, 12rem) clamp(1.25rem, 6vw, 6rem) clamp(4rem, 8vw, 7rem);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(207, 176, 109, 0.22), transparent 26rem),
+    var(--paper);
+}
+
+.heroCopy {
+  max-width: 64rem;
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.sectionHeading h2,
+.closing h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.hero h1 {
+  max-width: 13ch;
+  font-size: clamp(4rem, 9.2vw, 9.5rem);
+  line-height: 0.89;
+}
+
+.intro {
+  max-width: 42rem;
+  margin: clamp(2rem, 4vw, 3.75rem) 0 0;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.heroNote {
+  padding: 1.5rem 0 0;
+  border-top: 1px solid currentColor;
+}
+
+.heroNote span,
+.productCount {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.heroNote p {
+  margin: 1rem 0 0;
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.collection {
+  padding: clamp(4.5rem, 9vw, 8rem) clamp(1.25rem, 6vw, 6rem);
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sectionHeading h2,
+.closing h2 {
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 0.98;
+}
+
+.sectionHeading > p {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.card {
+  position: relative;
+  grid-column: span 4;
+  min-height: 38rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--ingredient-tone) 11%, var(--paper));
+}
+
+.card:nth-child(4),
+.card:nth-child(5) {
+  grid-column: span 6;
+}
+
+.cardTopline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.botanicalMark {
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  margin: 2.4rem 0;
+  border: 1px solid color-mix(in srgb, var(--ingredient-tone) 70%, transparent);
+  border-radius: 50% 44% 52% 42%;
+  color: var(--ingredient-tone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  line-height: 1;
+  transform: rotate(-8deg);
+}
+
+.cardBody {
+  margin-top: auto;
+}
+
+.cardBody h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 3vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.cardBody p {
+  max-width: 32rem;
+  margin: 1rem 0;
+  line-height: 1.55;
+}
+
+.cardBody ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cardBody li {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+
+.card > a,
+.closing a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card > a:hover,
+.closing a:hover {
+  opacity: 0.62;
+}
+
+.productCount {
+  margin: 1rem 0 0;
+  opacity: 0.64;
+}
+
+.closing {
+  padding: clamp(5rem, 12vw, 10rem) clamp(1.25rem, 14vw, 14rem);
+  color: #f8f2e7;
+  background: #173b2c;
+}
+
+.closing p:not(.eyebrow) {
+  max-width: 42rem;
+  margin: 2rem 0 3rem;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.closing a {
+  max-width: 24rem;
+  border-color: rgba(248, 242, 231, 0.36);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.7rem, 14vw, 7rem);
+  }
+
+  .heroNote {
+    max-width: 28rem;
+  }
+
+  .card,
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    grid-column: span 6;
+  }
+
+  .card:last-child {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 620px) {
+  .sectionHeading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .grid {
+    display: block;
+    border-left: 0;
+  }
+
+  .card {
+    min-height: 34rem;
+    border-left: 1px solid var(--line);
+  }
+}

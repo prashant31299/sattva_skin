@@ -1,0 +1,310 @@
+.page {
+  --policy-ink: #173b2c;
+  --policy-paper: #f5f0e6;
+  --policy-line: rgba(23, 59, 44, 0.2);
+  color: var(--policy-ink);
+  background: var(--policy-paper);
+}
+
+.hero {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(7rem, 13vw, 12rem) clamp(1.25rem, 8vw, 8rem) clamp(4rem, 8vw, 7rem);
+  border-bottom: 1px solid var(--policy-line);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(214, 174, 112, 0.22), transparent 28rem),
+    var(--policy-paper);
+}
+
+.heroTopline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--policy-line);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 1.2rem;
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.status h2,
+.details > header h2,
+.section h3,
+.related h2,
+.trackPreview h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.hero h1 {
+  max-width: 12ch;
+  font-size: clamp(4rem, 9vw, 9.5rem);
+  line-height: 0.88;
+}
+
+.intro {
+  max-width: 46rem;
+  margin: clamp(2rem, 4vw, 3.5rem) 0 0;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  line-height: 1.7;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.35fr) minmax(0, 1fr);
+  gap: 2rem;
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 8vw, 8rem);
+  color: #f7f1e7;
+  background: var(--policy-ink);
+}
+
+.status > p {
+  margin: 0;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.status > div {
+  max-width: 54rem;
+}
+
+.status h2 {
+  font-size: clamp(2rem, 4.2vw, 4.5rem);
+  line-height: 1;
+}
+
+.status div p {
+  margin: 1.25rem 0 0;
+  line-height: 1.7;
+  opacity: 0.86;
+}
+
+.details {
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 8vw, 8rem);
+}
+
+.details > header {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.45fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.details > header h2,
+.related h2,
+.trackPreview h2 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 6vw, 6.4rem);
+  line-height: 0.94;
+}
+
+.sectionList {
+  border-top: 1px solid var(--policy-line);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: minmax(3rem, 0.18fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  border-bottom: 1px solid var(--policy-line);
+}
+
+.section > span {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.section > div {
+  max-width: 52rem;
+}
+
+.section h3 {
+  max-width: 15ch;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 3.6vw, 3.8rem);
+  line-height: 1;
+}
+
+.section p {
+  margin: 0 0 1.1rem;
+  line-height: 1.78;
+}
+
+.section ul {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--policy-line);
+  list-style: none;
+}
+
+.section li {
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.4rem;
+  border-bottom: 1px solid var(--policy-line);
+  line-height: 1.55;
+}
+
+.section li::before {
+  position: absolute;
+  left: 0;
+  content: "—";
+}
+
+.related {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.4fr);
+  gap: 4rem;
+  align-items: end;
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 8vw, 8rem);
+  color: #f7f1e7;
+  background: var(--policy-ink);
+}
+
+.relatedLinks {
+  display: grid;
+  border-top: 1px solid rgba(247, 241, 231, 0.4);
+}
+
+.relatedLinks a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(247, 241, 231, 0.4);
+  color: inherit;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.trackPreview {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(3rem, 8vw, 9rem);
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 8vw, 8rem);
+  background: #ded8ca;
+}
+
+.trackPreview > div > p:last-child {
+  max-width: 38rem;
+  margin: 2rem 0 0;
+  line-height: 1.75;
+}
+
+.trackPreview form {
+  align-self: end;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid var(--policy-line);
+  background: rgba(245, 240, 230, 0.6);
+}
+
+.trackPreview fieldset {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.trackPreview legend {
+  margin-bottom: 1.5rem;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.trackPreview label {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trackPreview input {
+  min-height: 3.2rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--policy-line);
+  border-radius: 0;
+  color: var(--policy-ink);
+  background: var(--policy-paper);
+}
+
+.trackPreview button {
+  min-height: 3.2rem;
+  margin-top: 1rem;
+  border: 1px solid var(--policy-ink);
+  color: var(--policy-paper);
+  background: var(--policy-ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.trackPreview fieldset:disabled {
+  opacity: 0.6;
+}
+
+.trackPreview form > p {
+  margin: 1.4rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.trackPreview form a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 760px) {
+  .status,
+  .details > header,
+  .related,
+  .trackPreview {
+    grid-template-columns: 1fr;
+  }
+
+  .heroTopline span:last-child {
+    text-align: right;
+  }
+
+  .section {
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .relatedLinks {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

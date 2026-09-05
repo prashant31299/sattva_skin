@@ -1,0 +1,46 @@
+.loading {
+  min-height: 70vh;
+  padding-block: 7rem;
+}
+
+.kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.line,
+.cards span {
+  background: linear-gradient(90deg, #e8e3d9 20%, #f5f1e9 50%, #e8e3d9 80%);
+  background-size: 200% 100%;
+  animation: shine 1.4s linear infinite;
+}
+
+.line {
+  width: min(680px, 90%);
+  height: clamp(3rem, 9vw, 8rem);
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.cards span {
+  aspect-ratio: 0.85;
+  border-radius: 1.25rem;
+}
+
+@keyframes shine {
+  to { background-position: -200% 0; }
+}
+
+@media (max-width: 700px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards span:last-child { display: none; }
+}

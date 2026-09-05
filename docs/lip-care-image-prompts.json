@@ -1,0 +1,90 @@
+{
+  "mode": "Built-in image_gen",
+  "notes": [
+    "Packaging references supplied by the user. Styled scenes generated from those photos.",
+    "Strawberry balm identity inferred from supplied filenames, awaiting confirmation.",
+    "Balm base: shea butter, coconut oil, beeswax. Scrub adds sugar.",
+    "Prices and availability not supplied. Checkout remains closed."
+  ],
+  "assets": [
+    {
+      "slug": "butterscotch-lip-balm",
+      "prompt": "Use case: compositing. Asset type: premium ecommerce product photograph, square 1536x1536 composition. Edit the supplied Sattva Skin product photo into a refined studio still life matching a website with warm ivory #f7f3ec, forest green #344b3a and terracotta #c84f27. Keep the exact product identity, container geometry, lid, original label artwork, brand spelling and product size from the reference. Product must dominate the central 60% of frame, label upright, clean and readable. Replace the wood tabletop and wall with warm matte ivory plaster, a low rounded limestone plinth and soft daylight from upper left, gentle botanical shadows. Camera close, premium realistic materials, restrained editorial styling. No added text, no typography outside the original label, no watermark, no extra products, no hands. Leave outer 10% uncluttered for website crop.\nHero subject: the clear faceted square 5gm Butterscotch LIP BALM pot with orange round label. Surround with two small golden butterscotch pieces, a subtle shea butter curl, and a small coconut wedge at the frame edge. Warm caramel and muted sage accents. No sugar crystals; this is a smooth balm.",
+      "references": [
+        "/Users/prash/Documents/butt.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-fc62721a-892a-409e-874a-7c83a65e1df8.png",
+      "output": "public/images/lip-care/butterscotch-lip-balm.webp",
+      "correction": "Use case: precise-object-edit. Image 1 is the edit target. Image 2 is the original package for label reference only. Preserve image 1 composition, product, lighting, props and materials completely. Correct ONLY the tiny benefits text below LIP BALM on orange label to exactly two lines: 'BRIGHTENING • HYDRATES' and 'SOFTENS • BRIGHTENS'. Keep 'SATTVA SKIN', 'Butterscotch', 'LIP BALM' and '5gm'. The current incorrect soothing/protecting words must be removed. No other changes."
+    },
+    {
+      "slug": "chocolate-lip-balm",
+      "prompt": "Use case: compositing. Asset type: premium ecommerce product photograph, square 1536x1536 composition. Edit the supplied Sattva Skin product photo into a refined studio still life matching a website with warm ivory #f7f3ec, forest green #344b3a and terracotta #c84f27. Keep the exact product identity, container geometry, lid, original label artwork, brand spelling and product size from the reference. Product must dominate the central 60% of frame, label upright, clean and readable. Replace the wood tabletop and wall with warm matte ivory plaster, a low rounded limestone plinth and soft daylight from upper left, gentle botanical shadows. Camera close, premium realistic materials, restrained editorial styling. No added text, no typography outside the original label, no watermark, no extra products, no hands. Leave outer 10% uncluttered for website crop.\nHero subject: the small transparent square 5gm Chocolate LIP BALM pot with black round lid and brown label, as supplied. Surround with two dark chocolate pieces and a few cocoa beans, a modest coconut wedge and shea butter curl at the frame edge. Rich cocoa brown and ivory, small muted forest green accent. No sugar crystals; this is a smooth balm.",
+      "references": [
+        "/Users/prash/Documents/coco.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-174998ad-d88f-4102-a25e-ebc94f42ab02.png",
+      "output": "public/images/lip-care/chocolate-lip-balm.webp",
+      "correction": "Use case: precise-object-edit. Image 1 is the edit target. Image 2 original package label reference only. Preserve image 1 composition, product, props, lighting and every other element. Correct ONLY the two tiny lines below LIP BALM to exactly 'BRIGHTENING • HYDRATES' and 'SOFTENS • BRIGHTENS'. BRIGHTENS is spelled B R I G H T E N S. Keep SATTVA SKIN, Chocolate, LIP BALM and 5gm unchanged. No other changes.",
+      "finalCorrection": "Use case: precise-object-edit. This is a typography correction. In the supplied photograph, the chocolate jar label's small second benefits line currently has a misspelling at approximately x=650,y=682 in this 1254px image. REMOVE the entire small second line and typeset it afresh, in crisp white uppercase sans serif: SOFTENS • BRIGHTENS. The final word must be BRIGHTENS (B R I G H T E N S), not BRICHIENS or BRIGHTIENS. Increase the small font slightly if needed for legibility. Preserve the first small line BRIGHTENING • HYDRATES. All other label text, jar geometry, chocolate, coconut, shea butter, plinth and background must stay the same. Only retypeset that second benefits line."
+    },
+    {
+      "slug": "strawberry-lip-scrub",
+      "prompt": "Use case: compositing. Asset type: premium ecommerce product photograph, square 1536x1536 composition. Edit the supplied Sattva Skin product photo into a refined studio still life matching a website with warm ivory #f7f3ec, forest green #344b3a and terracotta #c84f27. Keep the exact product identity, container geometry, lid, original label artwork, brand spelling and product size from the reference. Product must dominate the central 60% of frame, label upright, clean and readable. Replace the wood tabletop and wall with warm matte ivory plaster, a low rounded limestone plinth and soft daylight from upper left, gentle botanical shadows. Camera close, premium realistic materials, restrained editorial styling. No added text, no typography outside the original label, no watermark, no extra products, no hands. Leave outer 10% uncluttered for website crop.\nImage 1 is the exact top label reference, image 2 shows the same short round clear 8 gm jar, black lid, pale pink scrub contents. Hero subject: that Strawberry lip scrub jar in three-quarter view with lid label readable. Surround with one ripe strawberry and one half strawberry as dominant ingredients, a restrained spoonful of fine sugar crystals, small coconut wedge and shea butter curl. Strawberry blush, ivory, sage green. Keep original red Strawberry label and black lid.",
+      "references": [
+        "/Users/prash/Documents/Codex Image Sep 5, 2026, 04_47_13 AM.jpg",
+        "/Users/prash/Documents/Codex Image Sep 5, 2026, 04_47_21 AM.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-ad3cb86e-6a86-4a41-92be-3bc435a59ca0.png",
+      "output": "public/images/lip-care/strawberry-lip-scrub.webp"
+    },
+    {
+      "slug": "red-wine-lip-scrub",
+      "prompt": "Use case: compositing. Asset type: premium ecommerce product photograph, square 1536x1536 composition. Edit the supplied Sattva Skin product photo into a refined studio still life matching a website with warm ivory #f7f3ec, forest green #344b3a and terracotta #c84f27. Keep the exact product identity, container geometry, lid, original label artwork, brand spelling and product size from the reference. Product must dominate the central 60% of frame, label upright, clean and readable. Replace the wood tabletop and wall with warm matte ivory plaster, a low rounded limestone plinth and soft daylight from upper left, gentle botanical shadows. Camera close, premium realistic materials, restrained editorial styling. No added text, no typography outside the original label, no watermark, no extra products, no hands. Leave outer 10% uncluttered for website crop.\nImage 1 is exact jar geometry reference, image 2 exact label reference. Hero subject: that short round clear 8 gm jar of pink Red Wine LIP SCRUB with black round lid and burgundy circular label. Three-quarter view, readable label. Surround with a small cluster of dark red grapes, a restrained scatter of fine sugar crystals and small coconut wedge, a muted burgundy textile corner. Warm ivory, burgundy and forest green accents. Keep the scrub itself pink, not dark wine. No wine bottle or drinking glass.",
+      "references": [
+        "/Users/prash/Documents/red wine.jpg",
+        "/Users/prash/Documents/red label.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-d813b051-09ac-47e0-a759-ac8b4d1bf3ea.png",
+      "output": "public/images/lip-care/red-wine-lip-scrub.webp",
+      "correction": "Use case: precise-object-edit. Image 1 is the edit target. Preserve composition, original jar and its readable label, pink scrub, grapes, coconut, textile, plinth and lighting. Change ONLY the oversized glass-like crystals on the plinth and foreground to a subtle scatter of realistic fine white granulated sugar, grains under one millimeter. No rocks or glass chunks. No other changes."
+    },
+    {
+      "slug": "strawberry-lip-balm",
+      "prompt": "Use case: compositing. Asset type: premium ecommerce product photograph, square 1536x1536. Edit the supplied Sattva Skin product photo into a refined still life matching warm ivory #f7f3ec, forest green #344b3a and terracotta #c84f27 website. Image 1 exact original label reference, image 2 same jar three-quarter reference. Preserve exact small 5gm clear faceted square pot and clear circular lid, pale pink balm, original coral-pink label reading SATTVA SKIN BRIGHTENING LIP BALM and its text/artwork; do not add Strawberry text on packaging. Product dominates central 60% of frame, label readable and almost front-facing. Replace wall and wood with warm matte ivory plaster and low limestone plinth. Surround with one strawberry and one strawberry half as main visual props, small coconut wedge and shea butter curl at frame edge. Soft daylight upper left, restrained botanical shadow, subtle blush and muted sage accents. Clean editorial realistic materials. No sugar crystals, no honey, no extra product, no hands, no text outside existing label, no watermark. Leave 10% outer margin uncluttered.",
+      "references": [
+        "/Users/prash/Documents/lip balm.jpg",
+        "/Users/prash/Documents/str lip balm.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-199dfa31-6688-40e2-84ee-4dc7a374a0d6.png",
+      "output": "public/images/lip-care/strawberry-lip-balm.webp"
+    },
+    {
+      "slug": "lip-balm-base",
+      "prompt": "Use case: infographic-diagram. Asset type: premium square ingredient infographic for Sattva Skin lip balm website, 1536x1536. Warm ivory #f7f3ec background, forest green #344b3a type, restrained caramel and terracotta small accents. Elegant bold Helvetica-like typography, generous negative space, refined realistic ingredient photography with soft directional shadows. Header exact \"THE BALM BASE\" and small upper eyebrow \"SATTVA SKIN / LIP CARE\". Three spacious ingredient arrangements forming a triangle: a curl of creamy shea butter with a shea nut upper-left, a coconut half and small clear pool of coconut oil upper-right, small golden beeswax pellets at bottom center. A smooth ivory balm smear at center with fine forest-green leader lines and tiny numbered dots connecting the three ingredient arrangements. Exact labels legible and large: \"01 Shea butter\" / \"Rich texture\"; \"02 Coconut oil\" / \"Smooth glide\"; \"03 Beeswax\" / \"Balm structure\". Footer exact \"THREE BASE INGREDIENTS. ONE DAILY RITUAL.\" Keep words correctly spelled and do not add text, percentages, medical claims, organic or vegan badges, sugar, honey, products, faces or watermark. Designed to match modern botanical editorial ecommerce, quiet and high-end, not a busy poster.",
+      "references": [],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-622fc86c-64e5-401e-8538-211343f82750.png",
+      "output": "public/images/lip-care/lip-balm-base.webp"
+    },
+    {
+      "slug": "lip-scrub-base",
+      "prompt": "Use case: infographic-diagram. Asset type: premium square ingredient infographic for Sattva Skin lip scrub website, 1536x1536. Warm ivory #f7f3ec background, forest green #344b3a type, restrained terracotta and blush accents. Elegant bold Helvetica-like typography, generous negative space, refined realistic ingredient photography with soft daylight shadows. Header exact \"THE SCRUB BASE\" and small upper eyebrow \"SATTVA SKIN / LIP CARE\". Four spacious ingredient arrangements in a loose ring around a small blush pink scrub smear in center: creamy shea butter curl with a shea nut top-left; coconut half and tiny pool of coconut oil top-right; golden beeswax pellets bottom-left; a small mound of fine white sugar crystals bottom-right. Thin forest-green leader lines with tiny numbered dots. Exact large legible labels: \"01 Shea butter\" / \"Rich texture\"; \"02 Coconut oil\" / \"Smooth glide\"; \"03 Beeswax\" / \"Scrub structure\"; \"04 Sugar\" / \"Polishing grains\". Footer exact \"A LITTLE TEXTURE. A SOFTER RITUAL.\" Do not add other text, percentages, claims, organic or vegan badges, honey, product jars, faces, watermarks. Quiet high-end botanical editorial infographic.",
+      "references": [],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-51e33494-64f1-4707-a800-301ffd4a5fa3.png",
+      "output": "public/images/lip-care/lip-scrub-base.webp"
+    },
+    {
+      "slug": "lip-care-collection",
+      "prompt": "Use case: compositing. Asset type: premium wide ecommerce campaign photograph for Sattva Skin website hero, landscape 1536x1024. Inputs 1 through 5 are exact product identity references, preserve their container shapes, sizes relative to each other, label artwork and brand typography. Compose an elegant group still life of these FIVE small lip care pots on warm ivory limestone platforms, a muted sage linen drape, creamy plaster background. Products: clear faceted square Butterscotch Lip Balm orange label 5gm; clear square black-lidded Chocolate Lip Balm brown label 5gm; clear faceted square pink-labelled Brightening Lip Balm 5gm; short round clear pink Strawberry lip scrub black lid red label 8gm; short round clear pink Red Wine lip scrub black lid burgundy label 8gm. Product group occupies middle-right of image from 38% to 92% width, labels front facing and readable. Left 30% clean ivory negative space. Soft afternoon directional light, real tactile shadows and crystal refractions, some height variation. Tastefully arrange two strawberries, a few dark grapes, two dark chocolate pieces and two butterscotch pieces at base, with a coconut wedge and subtle shea butter curl. Accent palette forest green #344b3a, warm cream #f7f3ec, terracotta #c84f27, restrained berry tones. Luxury botanical campaign photography, believable small cosmetic packaging, no giant jars. No added text outside original labels, no banner, no watermarks, no people, no invented packaging.",
+      "references": [
+        "/Users/prash/Documents/butt.jpg",
+        "/Users/prash/Documents/coco.jpg",
+        "/Users/prash/Documents/lip balm.jpg",
+        "/Users/prash/Documents/Codex Image Sep 5, 2026, 04_47_13 AM.jpg",
+        "/Users/prash/Documents/red wine.jpg"
+      ],
+      "source": "/Users/prash/.codex/generated_images/01a06ecd-76c2-7661-9802-16ecb278d51e/exec-8be277d9-84cc-47e5-b8f7-55ed030d20f4.png",
+      "output": "public/images/lip-care/lip-care-collection.webp"
+    }
+  ]
+}

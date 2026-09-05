@@ -1,0 +1,21 @@
+.section { padding-block: clamp(3.5rem, 7vw, 7rem); background: var(--color-primary-dark); color: #fffdf9; }
+.layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
+.copy h2 { margin: 1.3rem 0 1.6rem; font-size: clamp(2.8rem, 5.2vw, 5.7rem); font-weight: 780; letter-spacing: -.06em; line-height: .95; overflow-wrap: anywhere; }
+.copy h2 span { color: #c6d1b7; }
+.intro { max-width: 34rem; color: #d5dacd; font-size: 1rem; line-height: 1.65; }
+.toggle { display: flex; gap: .45rem; padding: .3rem; margin: 1.6rem 0; border: 1px solid #ffffff40; border-radius: .85rem; }
+.toggle button { flex: 1; padding: .85rem .6rem; border: 0; border-radius: .6rem; background: transparent; color: #fffdf9; text-align: left; font-size: .86rem; font-weight: 700; cursor: pointer; }
+.toggle button span { display: block; margin-top: .2rem; font-size: .58rem; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; }
+.toggle button[aria-pressed="true"] { background: #f7f3ec; color: #24352a; }
+.recipe { margin: 1.6rem 0 0; padding: 0; list-style: none; }
+.recipe li { display: grid; grid-template-columns: 2rem 1fr; gap: .5rem; padding: .85rem 0; border-top: 1px solid #ffffff30; }
+.recipe li > span { padding-top: .2rem; color: #c6d1b7; font-size: .62rem; }
+.recipe a { display: flex; align-items: center; justify-content: space-between; font-size: 1.05rem; font-weight: 650; }
+.recipe a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.recipe p { margin: .2rem 0 0; color: #c6cfbf; font-size: .8rem; }
+.note { margin-top: 1.2rem; color: #bac6b4; font-size: .72rem; }
+.visual { min-width: 0; margin: 0; overflow: hidden; border: 1px solid #ffffff30; border-radius: 1.25rem; background: #f7f3ec; color: #24352a; }
+.visual img { display: block; width: 100%; height: auto; }
+.visual figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem; padding: 1rem 1.2rem; border-top: 1px solid #d9d4c8; font-size: .6rem; text-transform: uppercase; letter-spacing: .08em; }
+.visual a { display: inline-flex; align-items: center; gap: .3rem; }
+@media(max-width: 800px) { .layout { grid-template-columns: 1fr; } .copy h2 { font-size: clamp(2.8rem, 10vw, 4.8rem); } .visual { margin-top: .5rem; } }

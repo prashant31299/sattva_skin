@@ -1,0 +1,70 @@
+.page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(4rem, 10vw, 8rem) var(--page-pad, 1.25rem);
+  color: var(--color-text, #171a17);
+  background: var(--color-bg, #f7f3ec);
+}
+
+.panel {
+  width: min(100%, 46rem);
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid var(--color-border, #d9d4c8);
+  background: var(--color-surface, #fffdf9);
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--color-muted, #6d7169);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.panel h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7vw, 6.2rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.panel > p:not(.eyebrow) {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  color: var(--color-muted, #6d7169);
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.actions button,
+.actions a {
+  min-height: 46px;
+  display: inline-flex;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-primary, #344b3a);
+  color: #fff;
+  background: var(--color-primary, #344b3a);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.actions a {
+  color: var(--color-primary, #344b3a);
+  background: transparent;
+}

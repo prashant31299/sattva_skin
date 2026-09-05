@@ -1,0 +1,231 @@
+.page {
+  --ink: #173b2c;
+  --paper: #f5f0e6;
+  --line: rgba(23, 59, 44, 0.2);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.hero {
+  padding: clamp(7rem, 13vw, 12rem) clamp(1.25rem, 12vw, 12rem) clamp(3.5rem, 7vw, 6rem);
+}
+
+.topline,
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.topline {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.topline a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.meta {
+  margin: clamp(2.5rem, 5vw, 4.5rem) 0 1.5rem;
+}
+
+.hero h1,
+.prose h2,
+.nextRead h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.hero h1 {
+  max-width: 13ch;
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.9;
+}
+
+.hero > p {
+  max-width: 48rem;
+  margin: clamp(2rem, 4vw, 3.5rem) 0 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.65;
+}
+
+.heroImage {
+  position: relative;
+  min-height: min(78vh, 55rem);
+  overflow: hidden;
+  background: #d8d0c0;
+}
+
+.disclaimer {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.4fr) minmax(0, 1fr);
+  gap: 2rem;
+  padding: 1.25rem clamp(1.25rem, 6vw, 6rem);
+  color: #f7f1e7;
+  background: #173b2c;
+}
+
+.disclaimer strong {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.disclaimer p {
+  max-width: 55rem;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.articleBody {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.38fr) minmax(0, 1fr);
+  gap: clamp(3rem, 9vw, 10rem);
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 10vw, 10rem);
+}
+
+.articleBody nav {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.articleBody nav > span {
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.articleBody nav ol {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.articleBody nav a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.prose {
+  max-width: 48rem;
+}
+
+.prose section {
+  scroll-margin-top: 8rem;
+  padding: 0 0 clamp(4rem, 8vw, 7rem);
+}
+
+.prose section > span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.prose h2 {
+  max-width: 14ch;
+  margin-bottom: 2rem;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 0.98;
+}
+
+.prose p {
+  margin: 0 0 1.4rem;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.85;
+}
+
+.prose ul {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.prose li {
+  padding: 1rem 0 1rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.55;
+}
+
+.prose li::before {
+  content: "—";
+  float: left;
+  margin-left: -1.5rem;
+}
+
+.nextRead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3rem;
+  align-items: end;
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 8vw, 8rem);
+  color: #f7f1e7;
+  background: #173b2c;
+}
+
+.nextRead p {
+  margin: 0 0 1rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nextRead h2 {
+  max-width: 13ch;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.94;
+}
+
+.nextRead a {
+  min-width: 11rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(247, 241, 231, 0.45);
+  color: inherit;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .articleBody,
+  .disclaimer,
+  .nextRead {
+    grid-template-columns: 1fr;
+  }
+
+  .articleBody nav {
+    position: static;
+  }
+
+  .heroImage {
+    min-height: 55vh;
+  }
+
+  .nextRead a {
+    width: min(100%, 20rem);
+  }
+}
